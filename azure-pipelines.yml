@@ -17,4 +17,4 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 
 - script: dotnet test --configuration $(buildConfiguration) --no-build
-  displayName: 'dotnet test $(buildConfiguration)' --no-build
+  displayName: 'dotnet test $(buildConfiguration) --no-build'
