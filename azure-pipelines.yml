@@ -21,6 +21,6 @@ steps:
   
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/DemoAspNetCoreApp/DemoAspNetCoreApp/bin/Debug/netcoreapp2.2'
+    PathtoPublish: '$(Build.SourcesDirectory)/DemoAspNetCoreApp/bin/$(buildConfiguration)/netcoreapp2.2'
     ArtifactName: 'drop'
     publishLocation: 'Container'
